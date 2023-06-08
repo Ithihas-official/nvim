@@ -101,6 +101,14 @@ return require("packer").startup(function(use)
 	use("ahmedkhalf/project.nvim")
 
 	-- bufferline
+	use({
+		"utilyre/barbecue.nvim",
+		tag = "*",
+		requires = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons", -- optional dependency
+		},
+	})
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 	-- autopairing brackets
 	use("windwp/nvim-autopairs")
